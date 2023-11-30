@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Sidebar Hover Animation</title>
+    <style>
+        /* Sidebar Styles */
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -230px;
+            /* left: 0; Change this to 0 to start from the left edge */
+            background-color: #333;
+            transition: left 0.3s ease;
+            /* transition: width 0.3s ease; Change transition property */
+            box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+        }
+
+        .sidebar:hover {
+            left: 0;
+            /* width: 250px; Change width to reveal sidebar */
+        }
+
+        .sidebar-content {
+            padding: 20px;
+            color: #fff;
+        }
+
+        /* Sidebar links */
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+            transition: background-color 0.2s;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        /* Rest of your styles here */
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <h2>Sidebar</h2>
+            <p>This is a sidebar with a hover animation.</p>
+            <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Add your main content here -->
+    <div class="container">
+        <h1>Main Content</h1>
+        <p>Your website content goes here.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

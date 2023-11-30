@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Hover Animation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Sidebar Styles */
+        .sidebar {
+            width: 250px;
+            background-color: #ffffff;
+            padding: 20px;
+            color: #383838;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+        }
+
+        /* Sidebar Link Styles */
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            color: #424242; /* Increase link text contrast */
+            text-decoration: none;
+            display: block; /* Make the links block-level for full width hover effect */
+            padding: 10px 15px; /* Add padding for better click/touch target */
+            border-radius: 5px; /* Add rounded corners to links */
+            transition: color 0.25s, transform 0.25s, background-color 0.25s, opacity 0.25s; /* Add transitions for color, background, and opacity */
+        }
+
+        /* Hover Animation */
+        .sidebar a:hover {
+            color: #2b2b2b; /* Change link text color on hover */
+            background-color: #e2e2e2; /* Change background color on hover */
+            opacity: 0.9; /* Reduce opacity on hover */
+            transform: scale(1.04); /* Add a subtle scale effect on hover */
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); Enhance the box shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+</body>
+</html>
